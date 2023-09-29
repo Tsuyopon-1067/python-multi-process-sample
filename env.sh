@@ -14,7 +14,6 @@ function help () {
 function create () {
     # Create virtual environment
     python3 -m venv .venv
-    start
 }
 
 if [ $# -eq 1 ]; then
