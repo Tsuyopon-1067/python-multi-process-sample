@@ -17,21 +17,9 @@ function create () {
     start
 }
 
-function start() {
-    # Activate
-    . .venv/bin/activate
-}
-
-function end () {
-    deactivate
-}
-
 if [ $# -eq 1 ]; then
     case $1 in
-        "h" | "help") help ;;
         "c" | "create") create ;;
-        "s" | "start") start ;;
-        "e" | "end") end ;;
         *) help ;;
     esac
 else
